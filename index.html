@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Schedule a Call</title>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.4)";
+            } else {
+                document.getElementById("nav").style.backgroundColor = "transparent";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="/" class="logo">
+            <img id="img" src="/photo-1554463529-e27854014799.jfif">
+            <h1>YAV</h1>
+        </a>
+        <div class="right-nav">
+            <a class="home">Home</a>
+            <a><button>Schedule a Call</button></a>
+            <a><button>Hire With Us</button></a>
+        </div>
+    </nav>
+    <div class="form-holder">
+        <form>
+            <div class="header">
+                <div class="bac-holder">
+                    <p class="bac">Book a call</p>
+                    <p class="bac-call">Call</p>
+                </div>
+                <p>Book a call slot and our respective will call you within 1hr of selected time.</p>
+                <hr>
+            </div>
+            <div class="form-input">
+                <label id="name">Name:</label>
+                <input for="name" type="name" required><br>
+            </div>
+            <div class="form-input">
+                <label id="email">Email:</label>
+                <input for="email" type="email" required><br>
+            </div>
+            <div class="form-input">
+                <label id="phone">Phone:</label>
+                <input for="phone" type="phone" required><br>
+            </div>
+            <div class="form-input">
+                <label id="date">Time for call:</label>
+                <div style="display:flex;width:100%;">
+                    <input for="date" type="date" style="width:50%;" required>
+                    <input type="time" style="width:50%;" required>
+                </div>
+            </div>
+            <button type="submit">GET A CALL</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <span><i class="fa fa-envelope"></i></span>
+            <p><i>Email</i></p>
+            <p>yavtechnology@gmail.com</p>
+        </div>
+        <div class="footer-item">
+            <span><i class="fa fa-phone"></i></span>
+            <p><i>Call Us</i></p>
+            <p>+91 7003442036</p>
+        </div>
+        <div class="footer-item">
+            <span><i class="fa fa-address-book"></i></span>
+            <p><i>Reach Us</i></p>
+            <p>YAV Technology, No 38/1 Laxmipura, Vaderahalli -Sakalvara Road, Anekal Taluk, Bangalore- 560083</p>
+        </div>
+        <div class="footer-item">
+            <span><i class="fa fa-thumbs-up"></i></span>
+            <a href="/">ISA</a>
+        </div>
+        <div class="footer-item">
+            <span><i class="fa fa-user-secret"></i></span>
+            <a href="/">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
